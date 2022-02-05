@@ -18,6 +18,9 @@ addBtn.addEventListener('click', function(e) {
 })
 
 minusBtn.addEventListener('click', function(e) {
+    
+    if (rockQty > 1) {    
     rockQty--
     qtyDisplay.textContent = `Quantity: ${rockQty}`
+    }
 })
